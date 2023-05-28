@@ -1,7 +1,8 @@
 // Database
+import { db } from '@/config';
 // Models
-
-import {consoleErrorsHandler} from "@/pages/utils/consoleErrorsHandler";
+// Utils
+import { consoleErrorsHandler } from '@/utils';
 
 
 /**
@@ -12,6 +13,8 @@ import {consoleErrorsHandler} from "@/pages/utils/consoleErrorsHandler";
  */
 const authLoginService = async ( req ) => {
   try {
+    await db.connect();
+
     return {
       message: 'authLoginService',
     }

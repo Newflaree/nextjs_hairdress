@@ -1,7 +1,7 @@
 // Services
-import { authLoginService } from "../services";
+import { authLoginService } from '../services';
 // Utils
-import { consoleErrorsHandler } from "@/pages/utils/consoleErrorsHandler";
+import { consoleErrorsHandler } from '@/utils';
 
 
 /**
